@@ -1,0 +1,11 @@
+<h1>Index</h1>
+<ul class="list-group">
+{{#each model.items as |data|}}
+    <li class="list-group-item">
+      <b>{{data.title}}</b>
+      <span class="info">{{data.start}}</span>
+      <span class="end">{{data.end}}</span>
+      <span class="color">{{data.color}}</span>
+    </li>
+{{/each}}
+</ul>

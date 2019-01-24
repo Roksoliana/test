@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="container">
+    <button type="button" class="btn btn-light">
+        {{#link-to "index"}} Main {{/link-to}}
+    </button>
+    <button type="button" class="btn btn-info">
+        {{#link-to "about"}} About Us {{/link-to}}
+    </button>
+    {{outlet}}
+</div>
